@@ -1,0 +1,6 @@
+evidence/*
+!evidence/README.md
+.env
+*.pem
+*.key
+__pycache__/

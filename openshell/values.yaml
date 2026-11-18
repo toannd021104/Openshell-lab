@@ -1,0 +1,11 @@
+# Target chart 0.0.116, single-node disposable lab.
+server:
+  defaultRuntimeClassName: ""
+  telemetryEnabled: false
+  # Local lab only; transport still uses chart-generated TLS.
+  auth:
+    allowUnauthenticatedUsers: true
+supervisor:
+  sideloadMethod: init-container
+service:
+  type: ClusterIP
